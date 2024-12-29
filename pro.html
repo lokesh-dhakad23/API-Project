@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Projects</title>
+    <link rel="stylesheet" href="pro.css">
+    <script src="pro.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div  id="interface" >
+        <h1 id="f-text">API Prac Projects</h1>
+        <div id="heading">
+            <h3 class="s-text">Voice TO Text Converter</h3>
+            <h3 class="s-text">Text To Speech Converter</h3>
+        </div>
+
+        <div id="imgdiv">
+            <img id="f-img" style="margin-right: 20px;" src="img/V2T.png">
+            <img id="s-img" style="margin-left: 20px;" src="img/T2S.png">
+        </div>
+    
+        <div id="btndiv">
+            <button id="vtot" class="trybtn">Try</button>
+            <button id="ttos" class="trybtn">Try</button>
+        </div>
+
+    </div>
+
+    <div id="main" style="display: none;">
+
+        <a href="#switch" id="switch-icon" title="Switch Projects"><i class="fa-solid fa-repeat"></i></a>
+        <a href="#home" id="home-icon" title="Back to Home"><i class="fa-solid fa-house-chimney"></i></a>
+
+
+        <div id="S2T"  >
+                <h1 id="vh">Voice To Text</h1>
+                <button id="micbtn"><i class="fa-solid fa-microphone"></i></button>
+                <p id="listening">Start Voice Input</p>
+                <button id="clearbtn">Clear</button>
+            <div id="text">
+                <p id="para"></p> 
+            </div>                   
+        </div>
+
+
+        <div id="T2S" style="display: none;">
+            <h1 id="th">Text To Speech</h1>
+            <button id="speakbtn"><i class="fa-solid fa-volume-high"></i></button>
+            <p id="speaking">Start Voice output</p>
+            <textarea class="input-area" placeholder="Enter text here..." rows="" cols="" name="" form="">
+                
+                </textarea>
+        </div>
+
+    </div>
+</body>
+</html>
